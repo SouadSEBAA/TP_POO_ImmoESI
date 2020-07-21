@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.AfficheProprietaireDetailsController">
+   <children>
+      <BorderPane prefHeight="750.0" prefWidth="900.0">
+         <center>
+            <ScrollPane prefHeight="652.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="790.0">
+                     <children>
+                        <VBox prefHeight="4000.0" prefWidth="793.0">
+                           <children>
+                              <Pane prefHeight="216.0" prefWidth="771.0">
+                                 <children>
+                                    <Label fx:id="nom_prenom" alignment="TOP_CENTER" layoutX="268.0" layoutY="69.0" prefHeight="98.0" prefWidth="273.0" text="Nom et Prénom">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="avatar" fitHeight="196.0" fitWidth="216.0" layoutX="47.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@avatar.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button layoutX="719.0" layoutY="59.0" mnemonicParsing="false" onAction="#Retour" prefHeight="35.0" prefWidth="124.0" text="Retour">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="320.0" prefWidth="793.0">
+                                 <children>
+                                    <Label layoutX="34.0" prefHeight="33.0" prefWidth="237.0" text="Informations Personnelles" textFill="#493665">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator layoutX="24.0" layoutY="39.0" prefHeight="6.0" prefWidth="495.0" />
+                                    <GridPane layoutX="87.0" layoutY="55.0" prefHeight="244.0" prefWidth="579.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="10.0" prefWidth="172.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="434.0" minWidth="10.0" prefWidth="407.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="47.0" minHeight="0.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="95.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label prefHeight="51.0" prefWidth="202.0" text="Nom :">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="17.0" prefHeight="51.0" prefWidth="202.0" text="Prénom :" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="TOP_LEFT" layoutX="10.0" layoutY="81.0" prefHeight="83.0" prefWidth="202.0" text="Coordoonées :" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="TOP_LEFT" layoutX="10.0" layoutY="145.0" prefHeight="83.0" prefWidth="202.0" text="Adresse :" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="nom" prefHeight="39.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="prenom" prefHeight="39.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <GridPane hgap="10.0" prefHeight="87.0" prefWidth="301.0" vgap="3.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="106.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="308.0" minWidth="10.0" prefWidth="291.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints fx:id="grid" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label alignment="TOP_LEFT" prefHeight="37.0" prefWidth="158.0" text="Email :">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="37.0" prefWidth="158.0" text="Telephone :" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="mail" alignment="TOP_LEFT" prefHeight="41.0" prefWidth="173.0" GridPane.columnIndex="1">
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="tel" prefHeight="40.0" prefWidth="240.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                             </children>
+                                          </GridPane>
+                                          <Label fx:id="adresse" prefHeight="81.0" prefWidth="410.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets left="100.0" top="100.0" />
+                                 </opaqueInsets>
+                              </Pane>
+                              <Pane cacheShape="false" centerShape="false" prefHeight="1000.0" prefWidth="770.0" scaleShape="false">
+                                 <children>
+                                    <Label layoutX="34.0" prefHeight="33.0" prefWidth="237.0" text="Liste des biens" textFill="#493665">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator layoutX="24.0" layoutY="39.0" prefHeight="6.0" prefWidth="495.0" />
+                                    <SubScene fx:id="listeBien" height="750.0" layoutY="43.0" width="900.0">
+                                      <root>
+                                        <Region />
+                                      </root>
+                                    </SubScene>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </center>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </BorderPane>
+   </children>
+</AnchorPane>

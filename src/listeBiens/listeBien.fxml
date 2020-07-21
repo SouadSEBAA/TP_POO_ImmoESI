@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="bas" minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="listeBiens.listeBienController">
+   <children>
+      <ListView fx:id="list" layoutX="-2.0" layoutY="45.0" prefHeight="605.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0" />
+      <Pane cacheShape="false" centerShape="false" layoutX="64.0" prefHeight="46.0" prefWidth="209.0" scaleShape="false">
+         <children>
+            <Separator layoutX="24.0" layoutY="37.0" prefHeight="6.0" prefWidth="182.0" />
+            <Label layoutX="42.0" layoutY="15.0" prefHeight="17.0" prefWidth="81.0" text="Biens" textFill="#9e24da">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

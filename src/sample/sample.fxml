@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="567.0" prefWidth="931.0" style="-fx-background-image: url('file:../../Images/ph.jpg');" stylesheets="@ImmoEsi.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.Controller">
+   <children>
+      <VBox layoutY="166.0" prefHeight="260.0" prefWidth="195.0">
+         <children>
+            <Pane prefHeight="70.0" prefWidth="207.0">
+               <children>
+                  <Button layoutX="7.0" layoutY="13.0" mnemonicParsing="false" onAction="#PressButtonAdmin" prefHeight="44.0" prefWidth="193.0" text="Administrateur" textFill="#1b1b1a">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane prefHeight="67.0" prefWidth="239.0">
+               <children>
+               <Button mnemonicParsing="false" onAction="#PressButtonClients" prefHeight="44.0" prefWidth="193.0" text="Clients" textFill="#1b1b1a">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Button>
+               </children>
+            </Pane>
+            <Pane prefHeight="66.0" prefWidth="262.0">
+               <children>
+               <Button fx:id="Quitter" layoutX="1.0" layoutY="-8.0" mnemonicParsing="false" onAction="#PressButtonQuit" prefHeight="44.0" prefWidth="193.0" text="Quitter" textFill="#1b1b1a">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Label ellipsisString="" layoutX="14.0" layoutY="20.0" prefHeight="154.0" prefWidth="510.0" text="Welcome to ImmoESI" wrapText="true" />
+   <ImageView fx:id="logo" blendMode="LIGHTEN" fitHeight="51.0" fitWidth="71.0" layoutX="850.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@bffafa2b-be17-4223-be5e-38db167f380b_200x200.png" />
+      </image>
+   </ImageView>
+   </children>
+</Pane>

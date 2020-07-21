@@ -1,0 +1,26 @@
+
+
+.button {
+	-fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-background-radius: 45;
+    -fx-text-fill: white;
+	-fx-font-size: 19px;
+
+	}
+
+.button:focused {
+	-fx-background-color: #161856/*#3C2C5F*/;
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+}
+
+.label {
+	-fx-text-fill:  white;
+	-fx-font-family: "Elephant" ;
+	-fx-font-size: 50px;
+	-fx-alignment: top-left;
+	-fx-font-style: italic;
+	}
+

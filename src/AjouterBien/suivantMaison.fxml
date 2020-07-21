@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #DBDADB;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AjouterBien.suivantMaisonController">
+   <children>
+      <Button fx:id="suivant2" layoutX="396.0" layoutY="376.0" mnemonicParsing="false" onAction="#creation" prefHeight="37.0" prefWidth="108.0" text="Suivant" />
+      <Pane cacheShape="false" centerShape="false" layoutX="501.0" layoutY="100.0" prefHeight="166.0" prefWidth="356.0" scaleShape="false">
+         <children>
+            <Separator layoutX="34.0" layoutY="35.0" prefHeight="8.0" prefWidth="280.0" />
+            <Label layoutX="34.0" layoutY="8.0" prefHeight="23.0" prefWidth="267.0" text="Cochez les dispositifs disponibles" textFill="#493665">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="meuble" layoutX="67.0" layoutY="43.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="123.0" text="Meuble">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="garage" layoutX="67.0" layoutY="70.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Garage">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="jardin" layoutX="67.0" layoutY="96.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="154.0" text="Jardin">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="piscine" layoutX="66.0" layoutY="122.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="161.0" text="Piscine">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </Pane>
+      <Pane cacheShape="false" centerShape="false" layoutX="62.0" layoutY="91.0" prefHeight="46.0" prefWidth="326.0" scaleShape="false">
+         <children>
+            <Separator layoutX="34.0" layoutY="35.0" prefHeight="8.0" prefWidth="280.0" />
+            <Label layoutX="34.0" layoutY="8.0" prefHeight="23.0" prefWidth="122.0" text="Path de l'image" textFill="#493665">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pathphoto" layoutX="181.0" layoutY="4.0" prefHeight="35.0" prefWidth="179.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane cacheShape="false" centerShape="false" layoutX="62.0" layoutY="183.0" prefHeight="46.0" prefWidth="326.0" scaleShape="false">
+         <children>
+            <Separator layoutX="34.0" layoutY="35.0" prefHeight="8.0" prefWidth="314.0" />
+            <Label layoutX="34.0" layoutY="8.0" prefHeight="23.0" prefWidth="158.0" text="Superficie habitable" textFill="#493665">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="supHaitable" layoutX="179.0" layoutY="4.0" prefHeight="35.0" prefWidth="179.0" />
+         </children>
+      </Pane>
+      <Pane cacheShape="false" centerShape="false" layoutX="62.0" layoutY="137.0" prefHeight="46.0" prefWidth="356.0" scaleShape="false">
+         <children>
+            <Separator layoutX="34.0" layoutY="35.0" prefHeight="8.0" prefWidth="280.0" />
+            <Label layoutX="34.0" layoutY="8.0" prefHeight="23.0" prefWidth="122.0" text="Nombre d'étages" textFill="#493665">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nbretage" layoutX="181.0" layoutY="4.0" prefHeight="35.0" prefWidth="179.0" />
+         </children>
+      </Pane>
+      <Pane cacheShape="false" centerShape="false" layoutX="69.0" layoutY="234.0" prefHeight="46.0" prefWidth="356.0" scaleShape="false">
+         <children>
+            <Separator layoutX="30.0" layoutY="39.0" prefHeight="8.0" prefWidth="288.0" />
+            <Label layoutX="29.0" layoutY="12.0" prefHeight="23.0" prefWidth="132.0" text="Nombre de piéces" textFill="#493665">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nbrpiece" layoutX="171.0" layoutY="7.0" prefHeight="37.0" prefWidth="179.0" />
+         </children>
+      </Pane>
+      <Pane cacheShape="false" centerShape="false" layoutX="285.0" layoutY="25.0" prefHeight="46.0" prefWidth="356.0" scaleShape="false">
+         <children>
+            <Separator layoutX="34.0" layoutY="35.0" prefHeight="8.0" prefWidth="260.0" />
+            <Label layoutX="95.0" layoutY="12.0" prefHeight="23.0" prefWidth="123.0" text="Ajout de Maison" textFill="#493665">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="warning" layoutX="366.0" layoutY="344.0" prefHeight="32.0" prefWidth="168.0" textFill="#c31919" />
+   </children>
+</AnchorPane>
